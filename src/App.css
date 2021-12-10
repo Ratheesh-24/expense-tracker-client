@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+/* ===================================== */
+/* --------------VARIABLES-------------- */
+/* ===================================== */
+:root {
+    --box-shadow-p: -5px 5px 0px rgba(16, 201, 56, 0.82), 0 1px 2px rgba(11, 253, 52, 0.24);
+    --box-shadow: 0 1px 3px rgba(240, 158, 6, 0.863),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    --box-shadow-2: -5px 5px 6px rgba(141, 139, 136, 0.82),
+        0 1px 2px rgba(11, 253, 52, 0.24);
+    --Kaushan-font: 'Kaushan Script', cursive;
+    --Poppins-font: 'Poppins', sans-serif;
+    --primary-color: rgb(27, 76, 238);
+    --shadow-color: rgb(2, 1, 1);
+    --bg-color: #e6e6e6;
+    --light-color: #fff;
+    --dark-color: #000;
+}
+
+
+/* ===================================== */
+/* ----------GENERAL STYLING------------ */
+/* ===================================== */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: (var(--bg-color));
+    font-family: var(--Poppins-font);
+    background-color: var(--light-color);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.card-outline {
+    border: none !important;
+}
+
+a:hover,
+.nav-bar {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+.btn-main {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-main:hover {
+    color: var(--light-color) !important;
+}
+
+.color-pm {
+    color: var(--primary-color) !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.text-lg {
+    font-size: 5rem;
+}
+
+.text-md {
+    font-size: 1.5rem;
+}
+
+.text-ml {
+    font-size: 2rem;
+}
+
+.fw-500 {
+    font-weight: 700;
+}
+
+.scale-hover {
+    transition: transform 0.5s;
+}
+
+.scale-hover:hover {
+    transform: scale(1.05) !important;
+}
+
+.bg-glass {
+    background-color: rgba(207, 205, 205, 0.212);
+    box-shadow: var(--box-shadow-2) !important;
+}
+
+/* ===================================== */
+/* ----------NAV BAR STYLING------------ */
+/* ===================================== */
+
+
+.nav-bar {
+    width: 100%;
+    border-right: solid 15px var(--primary-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+
+}
+
+.nav {
+    width: 100%;
+}
+
+.blush {
+    font-family: var(--Kaushan-font);
+    color: var(--primary-color);
+}
+
+.blush-hover:hover {
+    color: var(--light-color);
+}
+
+
+
+/* ===================================== */
+/* ----------LANDING STYLING------------ */
+/* ===================================== */
+
+.landing {
+    min-height: 90vh;
+    position: relative;
+    background: url('./assets/moneyManager.jpg') no-repeat center center/cover;
+}
+
+.landing-div {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dark-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===================================== */
+/* --------------PAGINATION------------- */
+/* ===================================== */
+
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationItem {
+    background: #fff;
+    border: 3px solid var(--primary-color);
+    padding: 15px 15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.paginationItem span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev,
+.next {
+    background: #fff;
+    border: none;
+    padding: 8px;
+    color: var(--primary-color);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.paginationItem.active {
+    border: 1px solid #888;
+    color: #888;
+    pointer-events: none;
+}
+
+.prev.disabled,
+.next.disabled {
+    pointer-events: none;
+    box-shadow: none;
+    color: #999;
+}
+
+/* ===================================== */
+/* -----------CARDS DISPLAY------------- */
+/* ===================================== */
+
+.card-img {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.card-style {
+    background-color: #222222;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-p);
+}
+
+
+.transactions {
+    height: 60vh;
+}
+
+
+/* ===================================== */
+/* -----------MEDIA QUERIES------------- */
+/* ===================================== */
+
+@media only screen and (max-width: 600px) {
+    .smallScreen {
+        font-size: 1.5rem !important;
+
+    }
+
+    .smallScreen-p {
+        font-size: 0.5rem !important;
+
+    }
+}

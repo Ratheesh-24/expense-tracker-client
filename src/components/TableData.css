@@ -1,0 +1,26 @@
+.title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+tr {
+    height: 40px !important;
+}
+
+th {
+    max-width: 125px;
+    min-width: 125px;
+    padding: 0 !important;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center !important;
+      background-color: rgb(255, 142, 6) !important;
+}
+
+td {
+    height: 40px !important;
+    padding: 5px !important;
+    text-align: center !important;
+    background-color: #fff6f68e !important;
+  
+}
